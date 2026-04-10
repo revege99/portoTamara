@@ -1,0 +1,163 @@
+/* --- SECTION BASE --- */
+.work-experience {
+    padding: 100px 0;
+    background: #fdfaf5;
+}
+
+/* --- TITLE --- */
+.experience-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #2d4739;
+    letter-spacing: -1px;
+}
+
+/* --- TIMELINE --- */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(45, 71, 57, 0.1);
+}
+
+/* --- JOB BLOCK --- */
+.job-block {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+/* Dot */
+.timeline-dot {
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #c5a386;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fdfaf5;
+}
+
+/* Company */
+.company-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e2621;
+    margin-bottom: 5px;
+}
+
+/* Role */
+.job-role {
+    display: inline-block;
+    font-size: 14px;
+    color: #c5a386;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* Duration */
+.job-duration {
+    font-size: 13px;
+    color: #636e66;
+}
+
+/* --- LIST --- */
+.experience-list {
+    margin-top: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.experience-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* custom bullet */
+.experience-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #c5a386;
+    border-radius: 50%;
+}
+
+/* --- GALLERY --- */
+.experience-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* image style */
+.experience-gallery img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* hover effect */
+.experience-gallery img:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* stagger look */
+.experience-gallery img:nth-child(2) {
+    margin-left: 40px;
+}
+
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+
+    .work-experience {
+        padding: 70px 0;
+    }
+
+    .experience-title {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline::before {
+        left: 5px;
+    }
+
+    .timeline-dot {
+        left: -5px;
+    }
+
+    .experience-gallery {
+        margin-top: 40px;
+    }
+
+    .experience-gallery img:nth-child(2) {
+        margin-left: 0;
+    }
+}

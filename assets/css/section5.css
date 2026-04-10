@@ -1,0 +1,98 @@
+.personal-skills {
+    padding: 100px 0;
+    background: #f5f0e9;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* WRAPPER CIRCLES */
+.skills-circles {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 30px;
+    justify-content: center;
+}
+
+/* CARD */
+.circle-card {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 8;
+    stroke: #ddd;
+}
+
+circle.progress {
+    stroke: #1fb6c1;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: 1.5s ease;
+}
+
+/* TEXT */
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.percent {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.circle-text p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* TOTAL */
+.skills-total {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills-total h3 {
+    font-size: 18px;
+}
+
+.skills-total span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* RIGHT TEXT */
+.skills-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.skills-content p {
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

@@ -1,0 +1,150 @@
+/* --- SECTION BASE --- */
+.education {
+    position: relative;
+    padding: 100px 0;
+    background: #fdfaf5;
+    overflow: hidden;
+}
+
+/* decorative circle */
+.edu-circle-deco {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(197, 163, 134, 0.08);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+/* --- TITLE --- */
+.education-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #2d4739;
+    margin-bottom: 70px;
+}
+
+/* --- IMAGE --- */
+.edu-image-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.edu-img {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    transition: 0.6s ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* subtle zoom */
+.edu-image-wrapper:hover .edu-img {
+    transform: scale(1.05);
+}
+
+/* overlay soft */
+.edu-image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+}
+
+/* --- TIMELINE --- */
+.timeline-edu {
+    position: relative;
+    padding-left: 40px;
+}
+
+/* line */
+.timeline-edu::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(45, 71, 57, 0.1);
+}
+
+/* --- ITEM --- */
+.edu-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+/* dot */
+.edu-dot {
+    position: absolute;
+    left: -1px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #c5a386;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fdfaf5;
+}
+
+/* --- TEXT --- */
+.edu-year {
+    font-size: 13px;
+    color: #c5a386;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.edu-university {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e2621;
+    margin: 5px 0;
+}
+
+.edu-major {
+    display: block;
+    font-size: 15px;
+    color: #636e66;
+    margin-bottom: 10px;
+}
+
+.edu-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    max-width: 500px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+
+    .education {
+        padding: 70px 0;
+    }
+
+    .education-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .edu-image-container {
+        margin-bottom: 40px;
+    }
+
+    .timeline-edu {
+        padding-left: 25px;
+    }
+
+    .timeline-edu::before {
+        left: 6px;
+    }
+
+    .edu-dot {
+        left: -4px;
+    }
+}

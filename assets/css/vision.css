@@ -1,0 +1,150 @@
+/* --- SECTION BASE --- */
+.vision-mission {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- COLOR HELPERS --- */
+.bg-cream-soft {
+    background-color: #f6f2ea;
+}
+
+.bg-forest {
+    background-color: #2d4739;
+}
+
+.text-forest {
+    color: #2d4739;
+}
+
+/* --- LEFT SIDE (TITLE AREA) --- */
+.vision-mission .col-lg-4 {
+    min-height: 400px;
+}
+
+.vision-mission h2 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* Decorative Circle */
+.decor-circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(197, 163, 134, 0.15); /* gold muted */
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* --- RIGHT SIDE CONTENT --- */
+.vision-mission .col-lg-8 {
+    overflow: hidden;
+}
+
+/* Decorative Star */
+.decor-star {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 40px;
+    color: rgba(255,255,255,0.08);
+    transform: rotate(15deg);
+}
+
+/* --- CONTENT BLOCK --- */
+.content-block {
+    max-width: 720px;
+}
+
+/* Serif Title */
+.serif-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Arrow Line */
+.arrow-line {
+    width: 40px;
+    height: 2px;
+    background: #c5a386;
+    position: relative;
+}
+
+.arrow-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #c5a386;
+    border-right: 2px solid #c5a386;
+}
+
+/* --- TEXT STYLE --- */
+.vision-mission p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.85);
+}
+
+/* --- MISSION LIST --- */
+.mission-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Custom bullet */
+.mission-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #c5a386;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+
+    .vision-mission .col-lg-4 {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .vision-mission .col-lg-8 {
+        padding: 50px 25px !important;
+    }
+
+    .decor-circle {
+        width: 150px;
+        height: 150px;
+        top: 10%;
+    }
+
+    .decor-star {
+        right: 20px;
+        top: 20px;
+        font-size: 28px;
+    }
+
+    .content-block {
+        max-width: 100%;
+    }
+}
